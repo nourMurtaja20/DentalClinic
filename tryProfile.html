@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="tryProfile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img class="image" src="images/logo.png" alt="logo">Clinic <text
+                        style="color: #1A73B7;">Oscar
+                    </text></a>
+                <!-- <h2 class="Oscar" style="color: #82C8E5;">Oscar <text style="color: #82C8E5;">Clinic</text></h2> -->
+            </div>
+            <div class="toggle">
+                <a href="#">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="item">الرئيسية</a></li>
+                <li><a href="Services.html" class="item">خدماتنا</a></li>
+                <li><a href="AboutUs.html" class="item">من نحن</a></li>
+                <li><a href="bookAppointment.html" class="item">حجز موعد</a></li>
+                <li><a href="ContactUs.html" class="item">تواصل معنا</a></li>
+            </ul>
+            <ul class="menuA">
+                <li><a href="#"><img class="profileImage" src="images/image4.png" onclick="FunctionopenLogout()"></a></li>
+                <li><a href="#"><img class="profilenotc" src="images/notification.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="logout" id="imglogout" onclick="FunctioncloseLogout()">
+        <a href="#">
+            <img class="imgLogout" src="images/logout.png" id="ilogout">
+            <p class="textLogout">تسجيل دخول</p>
+        </a>
+    </div>
+    <div class="divflex">
+        <a href="#" class="div3" onclick="Functionopen()">تعديل</a>
+        <img src="images/image4.png" class="div2">
+        <div class="divflex2S">
+            <h1 class="h1">سعاد احسان يونس</h1>
+            <div class="divflex4">
+                <div class="divflex5">
+                    <img class="img2" src="images/vector6.png">
+                    <h1 class="h2">anyone@gmail.com</h1>
+                </div>
+                <div class="divflex5">
+                    <img class="img2" style="left: 918px;" src="images/vector5.png">
+                    <h1 class="h2" style="left: 792px;">+972 1234 5678</h1>
+                </div>
+                <div class="divflex5">
+                    <img class="img2" style="left: 744px;" src="images/vector4.png">
+                    <h1 class="h2" style="left: 650px;">غزة , فلسطين</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dflex">
+        <a href="#" class="div4" onclick="FunctionReservations()">الحجوزات </a>
+        <a href="#" class="div4" style="left: 1100px;" onclick="Functioncoming()">القادم </a>
+        <a href="#" class="div4" style="left: 1017px;" onclick="FunctionNotes()">الملاحظات </a>
+    </div>
+
+    <div id="Reservations">
+        <h1 class="h3">اليوم</h1>
+        <div class="div5">
+            <h1 class="h4">موعد رقم 1</h1>
+            <a href="#" class="h11">حذف</a>
+            <h1 class="h5">التاريخ: </h1>
+            <h1 class="h5" style="top: 75px;">الوقت: </h1>
+            <h1 class="h5" style="top: 110px;">الطبيب: </h1>
+            <h1 class="h5" style="top: 145px; width: 89px; left: 410px;"> نوع الموعد:</h1>
+        </div>
+
+        <h1 class="h3" style="margin-top: 2%;">12/1/2022</h1>
+        <div class="div6">
+            <h1 class="h4">موعد رقم 1</h1>
+            <a href="#" class="h11">حذف</a>
+            <h1 class="h5">التاريخ: </h1>
+            <h1 class="h5" style="top: 75px;">الوقت: </h1>
+            <h1 class="h5" style="top: 110px;">الطبيب: </h1>
+            <h1 class="h5" style="top: 145px; width: 89px; left: 410px;"> نوع الموعد:</h1>
+        </div>
+    </div>
+
+    <div id="coming" hidden>
+        <h1 class="h3" style=" left: 1180px;">23/2/2022</h1>
+        <div class="div5">
+            <h1 class="h4">موعد رقم 1</h1>
+            <a href="#" class="h11">حذف</a>
+            <h1 class="h5">التاريخ: </h1>
+            <h1 class="h5" style="top: 75px;">الوقت: </h1>
+            <h1 class="h5" style="top: 110px;">الطبيب: </h1>
+            <h1 class="h5" style="top: 145px; width: 89px; left: 410px;">نوع الموعد:</h1>
+        </div>
+
+    </div>
+
+    <div id="Notes" hidden>
+        <h1 class="h3">اليوم</h1>
+        <div class="div5">
+            <h1 class="h4">موعد رقم 1</h1>
+            <a href="#" class="h11">حذف</a>
+            <!--<h1 class="h11">حذف</h1>-->
+            <h1 class="h5">التاريخ: </h1>
+            <h1 class="h5" style="top: 75px;">الوقت: </h1>
+            <h1 class="h5" style="top: 110px;">الطبيب: </h1>
+            <h1 class="h5" style="top: 145px; width: 89px; left: 410px;">نوع الموعد:</h1>
+        </div>
+
+    </div>
+
+    <div class="div11" id="back">
+        <div id="div7">
+
+            <form action="" method="post">
+                <p class="h6">تعديل البيانات الشخصية</p>
+                <img src="images/cros.png" id="img7" onclick="Functionclose()">
+                <h1 class="h7">الاسم</h1>
+                <input class="username" type="text" placeholder="  " name="username">
+                <h1 class="h8">البريد الالكتروني</h1>
+                <input class="email" type="email" placeholder="  " name="email">
+                <h1 class="h9"> رقم الهاتف</h1>
+                <input class="phoneno" type="text" placeholder="  " name="phoneno">
+                <h1 class="h10">عنوان السكن</h1>
+                <input class="address" type="text" placeholder="  " name="address">
+                <input type="submit" class="submit" value=" تعديل">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="logo" id="logo">
+            <a href="#"><img class="image" src="images/logo.png" alt="logo">Clinic <text style="color: #1A73B7;">Oscar
+                </text></a>
+        </div>
+        <div class="footer2">
+            <div class="footer2con">
+                <img src="images/vector5.png" class="vector4">
+                <text class="textvector4">0567 600 617</text>
+            </div>
+
+            <div class="footer2con">
+                <img src="images/vector6.png" class="vector4">
+                <text class="textvector4">Oscar Clinic@gmail.com</text>
+            </div>
+
+            <div class="footer2con">
+                <img src="images/vector4.png" class="vector4">
+                <text class="textvector4">غزة_فلسطين </text>
+            </div>
+
+        </div>
+        <div class="footer3">
+            <p class="footertext">2019-2021 اوسكار© جميع الحقوق محفوظة.</p>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".menu").hasClass("active")) {
+
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+
+                }
+
+            });
+
+        });
+        function FunctionReservations() {
+            var x = document.getElementById("Reservations");
+            var y = document.getElementById("coming");
+            var z = document.getElementById("Notes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function Functioncoming() {
+            var x = document.getElementById("coming");
+            var y = document.getElementById("Reservations");
+            var z = document.getElementById("Notes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function FunctionNotes() {
+            var z = document.getElementById("coming");
+            var y = document.getElementById("Reservations");
+            var x = document.getElementById("Notes");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function Functionopen() {
+            var o = document.getElementById("div7");
+            var x = document.getElementById("back");
+            if (o.style.display === "none") {
+                o.style.display = "block";
+                x.style.display = "block";
+
+            } else {
+                o.style.display = "none";
+            }
+
+        }
+        function Functionclose() {
+            var x = document.getElementById("back");
+            var o = document.getElementById("div7");
+            o.style.display = "none";
+            x.style.display = "none";
+
+        }
+        function FunctionopenLogout() {
+            var o = document.getElementById("imglogout");
+            if (o.style.display === "none") {
+                o.style.display = "block";
+            } else {
+                o.style.display = "none";
+            }
+
+        }
+        function FunctioncloseLogout() {
+            var o = document.getElementById("imglogout");
+            if (o.style.display === "block") {
+                o.style.display = "none";
+            } else {
+                o.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
